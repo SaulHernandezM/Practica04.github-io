@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: justify;
+    background: rgb(51, 153, 255);
+}
+
+#agrupar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    text-align: left;
+}
+
+#cabecera {
+    text-align: center;
+    flex-basis: 100%;
+    background: rgb(102, 204, 153);
+    padding: 40px;
+}
+
+#menu {
+    text-align: center;
+    flex-basis: 100%;
+    background: rgb(139, 235, 187);
+    padding: 10px 25px;
+}
+
+#seccion {
+    float: left;
+    width: 75%;
+    margin: 20px;
+}
+
+#columna {
+    float: left;
+    width: 20%;
+    margin: 20px 0;
+}
+
+#pie {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid black;
+}
+
+h1 {
+    font: bold 20px verdana, sans-serif;
+}
+
+h2 {
+    font: bold 14px verdana, sans-serif;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+}
+
+.caja {
+    padding: 20px;
+    flex: 1;
+}
+
+.iconos {
+    width: 35px;
+    height: 35px;
+}
+
+article, h2, h2, p  {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+article {
+    background:  rgb(102, 204, 153);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+article footer {
+    text-align: right;
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 500px;
+    height: 450px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    #agrupar {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .imagen {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #seccion {
+        width: 100%;
+    }
+
+    #columna {
+        width: 100%;
+        max-width: none;
+        margin: 20px;
+    }
+}
